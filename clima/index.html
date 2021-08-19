@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Local Weather App </title>
+    <title>CodePen - Local Weather App for FreeCodeCamp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./style.css">
@@ -11,11 +11,11 @@
 </head>
 
 <body>
-
+    <!-- partial:index.partial.html -->
     <main>
         <div :class="display">
             <div class="frontFace">
-                <h1 v-show="show">Buscando tu localización para obtener el estado del clima...</h1>
+                <h1 v-show="show">Estamos encontrando tu localización para darte los pronosticos del clima</h1>
             </div>
             <div class="backFace">
                 <i :class="weatherIcons"></i>
@@ -27,7 +27,7 @@
         </div>
     </main>
 
-
+    <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>

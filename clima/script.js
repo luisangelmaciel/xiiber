@@ -1,12 +1,4 @@
-/**
- *  Coded with ♥ by Yago Estévez
- * 
- *  Many things to polish, like:
- *  - The weird stuff going on when the virtual keyboard shows up on the phone.
- *  - Cross browser testing
- *  - Etc.
- * 
- */
+
 
 new Vue( {
   el   : 'main',
