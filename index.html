@@ -128,24 +128,19 @@
     <link rel="preload" href="https:/hihello.monster/xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https:/hihello.monster/xiibicon/style.css"></noscript>
     <link data-no-async=”1″ rel="stylesheet" href="https:/hihello.monster/xiibicon/style.css" media="all"> 
-    <link rel="stylesheet" href="https:/hihello.monster/css/hi-style.css"> -->
+    <link rel="stylesheet" href="https:/hihello.monster/css/hi-style.css"> 
 
 
     <link href="https://hihellomonster.github.io/hihello/xiibicon/fonts/xiibicon.woff " rel="stylesheet ">
-    <link href="https://hihellomonster.github.io/hihello/xiibicon/style.css " rel="stylesheet ">
+    <link href="https://hihellomonster.github.io/hihello/xiibicon/style.css " rel="stylesheet "> -->
 
     <script src="js/w3.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $("#mapa").load("mapa.html");
-        });
-    </script>
 
 
     <!-- Core theme CSS (includes Bootstrap)     <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
         OJOOOOOOOOOOOOO
-    <link rel="preload" href="css/stylesbsfull.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> --> 
+    <link rel="preload" href="css/stylesbsfull.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
     <script src="js/lazyload.min.js" async></script>
 
@@ -332,7 +327,7 @@
             <button class="tablinktop" aria-label="home"> <i class="icon-logo-xiiber-2021c" style="float:left; margin-left:15px"></i></button>
             <button class="tablinktop" aria-label="home"><label class="switch"  ><input type="checkbox" aria-label="Chechk Bok" checked><span class="slider round " onclick="myFunction()"  ></span>    </label>              </button>
             <button class="tablinktop">
-                <i class="icon-menu " style="float:right; margin-right:15px; " onclick="openName(event, 'menu')"  aria-label="menu" ></i>
+                <i class="icon-menu " style="float:right; margin-right:15px; " onclick="openName(event, 'menu')"   ></i>
                 <!-- <i class="icon-experiencias " style="float:right; margin-right:23px; " > </i>  --> 
                 <i class="icon-experiencias " style="float:right; margin-right:23px;  background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);        animation: background-slide 4000s infinite linear;  background-clip: text;          -webkit-background-clip: text;        -webkit-text-fill-color: transparent;" id="myBtn"> </i> 
                 <i class="icon-mapa-de-sitio" style="float:right; margin-right:23px;" onclick="myFunction()" ></i>
@@ -1369,22 +1364,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js " integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT " crossorigin="anonymous "></script>
         <script src="https://hihellomonster.github.io/xiiber/lazysizes.min.js " async></script>
         <script src="https://hihellomonster.github.io/xiiber/myXiibSript.js "></script>
-        <script>
-            const btns = document.querySelectorAll(".acc-btn");
-            // fn
-            function accordion() {
-                // this = the btn | icon & bg changed
-                this.classList.toggle("is-open");
-                // the acc-content
-                const content = this.nextElementSibling;
-                // IF open, close | else open
-                if (content.style.maxHeight) content.style.maxHeight = null;
-                else content.style.maxHeight = content.scrollHeight + "px";
-            }
 
-            // event
-            btns.forEach((el) => el.addEventListener("click", accordion));
-        </script>
 
 </body>
 
