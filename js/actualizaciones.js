@@ -5,9 +5,12 @@ var myObject = {
         "enlace": "https://www.xiiber.com/index.html",
         "href": "https://www.xiiber.com/index.html",
         "data-href": "index",
-        "img-avatar": "viajes",
+        "img-avatar": "https://www.xiiber.com/favicon.png",
+        "alt-avatar": "avatar",
+        "alt-avatar": "avatar",
         "pageid": "viajes",
         "accion": "Descargar"
+
 
     }, {
         "fechaDePublicacion": "15-agosto-2020",
@@ -16,6 +19,7 @@ var myObject = {
         "href: ": "https: //tepozspa.xiiber.com",
         "data-href": "xiiber",
         "img-avatar": "https://www.xiiber.com/favicon.png",
+        "alt-avatar": "avatar",
         "pageid": "viajes",
         "accion": "leer"
 
@@ -25,6 +29,7 @@ var myObject = {
         "enlace": "leer ahora",
         "href: ": "www.xiiber.com",
         "img-avatar": "https://www.xiiber.com/favicon.png",
+        "alt-avatar": "avatar",
         "pageid": "viajes",
         "data-href": "mapadesitio",
         "id": "mapadesitio",
