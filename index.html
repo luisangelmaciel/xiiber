@@ -27,13 +27,21 @@
     <noscript><link rel="stylesheet" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css"></noscript>
     <link data-no-async=”1″ rel="stylesheet" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css" media="all">
 
-    <script src="js/lazyload.min.js" async></script>
+    <script src="js/lazyload.min.js" type="text/javascript" charset="utf-8" async></script>
     <link rel="stylesheet" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css">
-    <script src="js/w3.js"></script>
+    <script src="js/w3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/actualizaciones.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="css/hi-style.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
-    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
-    <!-- bye <script src="js/jquery-3.5.0.js"></script> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--  
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="preload" href="sintel-short.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="fonts/cicle_fina-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    -->
+
     <link rel="icon " href="assets/icon/maskable_icon.png " sizes="114x114 " type="image/png " purpose="any maskable ">
 
     <link rel="canonical" href="">
@@ -90,8 +98,6 @@
     <meta name="twitter:image" content="">
     <meta name="twitter:image:alt" property="og:image:alt" content="The Filament Group logo">
 
-
-
     <!--  son las mismas imagenes que estan indicadas en el manifiesto -->
     <link rel="icon" type="image/x-icon" sizes="32x32" href="img/ico/cropped-fav-color-32x32.png">
     <link rel="icon" type="image/x-icon" sizes="192x192" href="img/ico/cropped-fav-color-192x192.png">
@@ -113,7 +119,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/ico/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/ico/apple-touch-icon-152x152.png">
 
-
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <link rel='preconnect' href='https://www.googletagmanager.com' />
@@ -122,307 +127,48 @@
     <link rel="https://api.w.org/" href="wp-json/" />
 
     <link rel='prefetch' href="https://hihellomonster.github.io/hihello/xiibicon/fonts/xiibicon.eot">
-
-
-    <!-- opciones de css propio 
-    <link rel="preload" href="https:/hihello.monster/xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https:/hihello.monster/xiibicon/style.css"></noscript>
-    <link data-no-async=”1″ rel="stylesheet" href="https:/hihello.monster/xiibicon/style.css" media="all"> 
-    <link rel="stylesheet" href="https:/hihello.monster/css/hi-style.css"> 
-
-
     <link href="https://hihellomonster.github.io/hihello/xiibicon/fonts/xiibicon.woff " rel="stylesheet ">
-    <link href="https://hihellomonster.github.io/hihello/xiibicon/style.css " rel="stylesheet "> -->
-
-    <script src="js/w3.js"></script>
-
-
-
-    <!-- Core theme CSS (includes Bootstrap)     <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
-        OJOOOOOOOOOOOOO
-    <link rel="preload" href="css/stylesbsfull.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-
-    <script src="js/lazyload.min.js" async></script>
-
-    <style>
-        .hi-acc-container {
-            width: 100%;
-            background: none;
-        }
-        
-        .hi-acc-btn {
-            width: 100%;
-            padding: 1rem 0rem;
-            font-size: 1.6rem;
-            cursor: pointer;
-            background: none;
-            border: none;
-            outline: none;
-            text-align: left;
-            transition: all 0.5s linear;
-            color: inherit;
-        }
-        
-        .hi-acc-btn:after {
-            content: "\271A";
-            color: #017dbb;
-            float: right;
-            transition: all 0.3s linear;
-            font-weight: bold;
-        }
-        
-        .hi-acc-btn.is-open:after {
-            transform: rotate(90deg);
-        }
-        
-        .hi-acc-btn:hover,
-        .hi-acc-btn.is-open {
-            color: inherit;
-            font-weight: bold;
-        }
-        
-        .hi-acc-btnx {
-            width: 100%;
-            font-size: 1rem;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            text-align: left;
-            transition: all 0.5s linear;
-        }
-        
-        .hi-acc-btnx:after {
-            color: #eae9f3;
-            float: right;
-            transition: all 0.3s linear;
-        }
-        
-        .hi-acc-content {
-            max-height: 0;
-            font-size: 1rem;
-            margin: 0 .6rem;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-            border-bottom: 1px solid #ccc;
-            background: none;
-            color: inherit;
-            list-style-type: none;
-        }
-        
-        A:link {
-            text-decoration: none
-        }
-        
-        A:visited {
-            text-decoration: none
-        }
-        
-        A:hover {
-            text-decoration: none
-        }
-        
-        a {
-            text-decoration: none !important;
-            outline: none !important;
-        }
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-        }
-        /* The Modal (background) */
-        
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 100px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: inherit;
-            /* Black w/ opacity */
-        }
-        /* Modal Content */
-        
-        .modal-content {
-            background-color: inherit;
-            margin: auto;
-            border: 1px solid #888;
-            width: 70%;
-        }
-        /* The Close Button */
-        
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
-    <!-- <div id="xiibertwitter"> </div> -->
-
-
-    <!--  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="main.js" as="script">
-  <link rel="preload" href="sintel-short.mp4" as="video" type="video/mp4">
-  <link rel="preload" href="fonts/cicle_fina-webfont.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css">-->
-
-
-
-
+    <link href="https://hihellomonster.github.io/hihello/xiibicon/style.css " rel="stylesheet ">
 
 </head>
 
+<!-- 
+    &nbsp; &nbsp; &nbsp;
+-->
+
 <body class="deRosa deRojo deNaranja deAmarillo deVerde deAzul deIndigo deLightSkyBlue deVioleta deNegro deBlanco bgRosa bgRojo bgNaranja bgAmarillo bgVerde bgAzul bgIndigo bgLightSkyBlue bgVioleta bgNegro bgBlanco  ">
 
-
-
-
     <div class="container">
-        <!-- tabtop start &nbsp; &nbsp; &nbsp;  -->
+        <!-- tabtop start  -->
         <div class="taptop">
-            <button class="tablinktop" aria-label="home"> <i class="icon-logo-xiiber-2021c" style="float:left; margin-left:15px"></i></button>
-            <button class="tablinktop" aria-label="home"><label class="switch"  ><input type="checkbox" aria-label="Chechk Bok" checked><span class="slider round " onclick="myFunction()"  ></span>    </label>              </button>
+            <button class="tablinktop" aria-label="home"><i class="icon-logo-xiiber-2021c" style="float:left; margin-left:15px"></i></button>
+            <!-- 
+                Boton que cambia de mode color
+                <button class="tablinktop" aria-label="home"><label class="switch"><input type="checkbox" aria-label="Chechk Bok" checked><span class="slider round " onclick="myFunction()"></span></label></button>
+            -->
+            <button class="tablinktop" aria-label="home"></button>
+
             <button class="tablinktop" aria-label="home">
-                <i class="icon-menu " style="float:right; margin-right:15px; " onclick="openName(event, 'menu')"   ></i>
-                <!-- <i class="icon-experiencias " style="float:right; margin-right:23px; " > </i>  --> 
-                <i class="icon-experiencias " style="float:right; margin-right:23px;  background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);        animation: background-slide 4000s infinite linear;  background-clip: text;          -webkit-background-clip: text;        -webkit-text-fill-color: transparent;" id="myBtn"> </i> 
-                <i class="icon-mapa-de-sitio" style="float:right; margin-right:23px;" onclick="myFunction()" ></i>
+            <i class="icon-menu" style="float:right; margin-right:15px;" onclick="openName(event, 'menu')"></i>                
+            <i class="icon-experiencias " style="float:right; margin-right:23px;"  onclick="document.getElementById('modeColor').style.display='block'"> </i>
+            <i class="icon-luna-pokemon" style="float:right; margin-right:23px;" onclick="myFunction()"></i>
             </button>
             <!-- tabtop end -->
         </div>
-        <div>
 
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content ">
-                    <span class="close">&times;</span>
+        <div id="modeColor" class="w3-modal">
+            <div class="w3-modal-content w3-card-4">
+                <div class="w3-container deRosa deRojo deNaranja deAmarillo deVerde deAzul deIndigo deLightSkyBlue deVioleta deNegro deBlanco bgRosa bgRojo bgNaranja bgAmarillo bgVerde bgAzul bgIndigo bgLightSkyBlue bgVioleta bgNegro bgBlanco  ">
                     <div>
-                        <div>
-                            <!-- 1 -->
-                            <style>
-                                #selectedcolor {
-                                    border: 1px solid #e3e3e3;
-                                    width: 80%;
-                                    height: 300px;
-                                    margin: auto;
-                                }
-                                
-                                #divpreview {
-                                    border: 1px solid #e3e3e3;
-                                    width: 80px;
-                                    height: 20px;
-                                    margin: auto;
-                                    visibility: hidden;
-                                }
-                                
-                                .colorTable,
-                                #colorhexDIV,
-                                #colorrgbDIV,
-                                #colorhslDIV,
-                                #colornamDIV {
-                                    font-family: Consolas, 'Courier New', Courier, monospace;
-                                }
-                                
-                                #colorhexDIV,
-                                #colorrgbDIV,
-                                #colorhslDIV,
-                                #colornamDIV {
-                                    font-size: 18px;
-                                }
-                                
-                                #wronginputDIV {
-                                    text-align: left;
-                                    position: absolute;
-                                    margin: 4px 10px;
-                                    color: #a94442;
-                                    display: none;
-                                }
-                                
-                                .has-error input {
-                                    border: 1px solid red;
-                                }
-                                
-                                #entercolorDIV input,
-                                #entercolorDIV button {
-                                    height: 28px;
-                                }
-                                
-                                #entercolorDIV input {
-                                    width: 80%;
-                                    border: 1px solid #d3d3d3;
-                                    border-right: none;
-                                }
-                                
-                                .ws-table-all td {
-                                    padding: 4px;
-                                }
-                                
-                                .colorthird1 {
-                                    width: 34%;
-                                }
-                                
-                                .colorthird2 {
-                                    width: 33%;
-                                }
-                                
-                                .colorthird3 {
-                                    width: 33%;
-                                }
-                                
-                                @media screen and (max-width:1080px) {
-                                    .colorthird1,
-                                    .colorthird2,
-                                    .colorthird3 {
-                                        width: 100%;
-                                    }
-                                }
-                            </style>
-                            <div class=" colorthird1" style="text-align:center;">
-                                <div>
-                                    <p> <strong>Fondo</strong> </p>
-                                    <img style='margin-right:0px;' src='https://luisangelmaciel.github.io/xiiber/img/img_modecolor_map.gif' usemap='#colormap' alt='colormap' />
-                                    <map id='colormap' name='colormap' onmouseout='mouseOutMap()'>
+                        <span onclick="document.getElementById('modeColor').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <div class="colorthird1">
+                            <div>
+                                <p style="font-size: 1.5em;">Mode multicolor</p>
+                                <p>Elige la combinación de colores que más te gusten</p>
+                                <br>
+                                <p> <strong>Fondo</strong> </p>
+                                <img style='margin-right:0px;' src='https://luisangelmaciel.github.io/xiiber/img/img_modecolor_map.gif' usemap='#colormap' alt='colormap' />
+                                <map id='colormap' name='colormap' onmouseout='mouseOutMap()'>
                 <area style='cursor:pointer' shape='poly' coords='63,0,72,4,72,15,63,19,54,15,54,4' onclick='w3.addStyle(".bgNegro","background-color", "black",-200,54)'  alt='#000000' />
                 <area style='cursor:pointer' shape='poly' coords='81,0,90,4,90,15,81,19,72,15,72,4' onclick='w3.addStyle(".bgBlanco", "background-color", "white", -200,72)'  alt='#000000' />
                 <area style='cursor:pointer' shape='poly' coords='99,0,108,4,108,15,99,19,90,15,90,4' onclick='w3.addStyle(".bgRosa", "background-color", "HotPink",-200,90)'  alt='#3366CC' />
@@ -508,192 +254,237 @@
                 <area style='cursor:pointer' shape='poly' coords='117,150,126,154,126,165,117,169,108,165,108,154' onclick='w3.addStyle("#FF9933",-50,108)'  alt='#FF9933' />
                 <area style='cursor:pointer' shape='poly' coords='135,150,144,154,144,165,135,169,126,165,126,154' onclick='w3.addStyle("#FF6600",-50,126)'  alt='#FF6600' /><area style='cursor:pointer' shape='poly' coords='153,150,162,154,162,165,153,169,144,165,144,154' onclick='w3.addStyle("#FF5050",-50,144)' onmouseover='mouseOverColor("#FF5050")' alt='#FF5050' /><area style='cursor:pointer' shape='poly' coords='171,150,180,154,180,165,171,169,162,165,162,154' onclick='w3.addStyle("#CC0066",-50,162)' onmouseover='mouseOverColor("#CC0066")' alt='#CC0066' /><area style='cursor:pointer' shape='poly' coords='189,150,198,154,198,165,189,169,180,165,180,154' onclick='w3.addStyle("#660033",-50,180)' onmouseover='mouseOverColor("#660033")' alt='#660033' /><area style='cursor:pointer' shape='poly' coords='54,165,63,169,63,180,54,184,45,180,45,169' onclick='w3.addStyle("#996633",-35,45)' onmouseover='mouseOverColor("#996633")' alt='#996633' /><area style='cursor:pointer' shape='poly' coords='72,165,81,169,81,180,72,184,63,180,63,169' onclick='w3.addStyle("#CC9900",-35,63)' onmouseover='mouseOverColor("#CC9900")' alt='#CC9900' /><area style='cursor:pointer' shape='poly' coords='90,165,99,169,99,180,90,184,81,180,81,169' onclick='w3.addStyle("#FF9900",-35,81)' onmouseover='mouseOverColor("#FF9900")' alt='#FF9900' /><area style='cursor:pointer' shape='poly' coords='108,165,117,169,117,180,108,184,99,180,99,169' onclick='w3.addStyle("#CC6600",-35,99)' onmouseover='mouseOverColor("#CC6600")' alt='#CC6600' /><area style='cursor:pointer' shape='poly' coords='126,165,135,169,135,180,126,184,117,180,117,169' onclick='w3.addStyle("#FF3300",-35,117)' onmouseover='mouseOverColor("#FF3300")' alt='#FF3300' /><area style='cursor:pointer' shape='poly' coords='144,165,153,169,153,180,144,184,135,180,135,169' onclick='w3.addStyle("#FF0000",-35,135)' onmouseover='mouseOverColor("#FF0000")' alt='#FF0000' /><area style='cursor:pointer' shape='poly' coords='162,165,171,169,171,180,162,184,153,180,153,169' onclick='w3.addStyle("#CC0000",-35,153)' onmouseover='mouseOverColor("#CC0000")' alt='#CC0000' /><area style='cursor:pointer' shape='poly' coords='180,165,189,169,189,180,180,184,171,180,171,169' onclick='w3.addStyle("#990033",-35,171)' onmouseover='mouseOverColor("#990033")' alt='#990033' /><area style='cursor:pointer' shape='poly' coords='63,180,72,184,72,195,63,199,54,195,54,184' onclick='w3.addStyle("#663300",-20,54)' onmouseover='mouseOverColor("#663300")' alt='#663300' /><area style='cursor:pointer' shape='poly' coords='81,180,90,184,90,195,81,199,72,195,72,184' onclick='w3.addStyle("#996600",-20,72)' onmouseover='mouseOverColor("#996600")' alt='#996600' /><area style='cursor:pointer' shape='poly' coords='99,180,108,184,108,195,99,199,90,195,90,184' onclick='w3.addStyle("#CC3300",-20,90)' onmouseover='mouseOverColor("#CC3300")' alt='#CC3300' /><area style='cursor:pointer' shape='poly' coords='117,180,126,184,126,195,117,199,108,195,108,184' onclick='w3.addStyle("#993300",-20,108)' onmouseover='mouseOverColor("#993300")' alt='#993300' /><area style='cursor:pointer' shape='poly' coords='135,180,144,184,144,195,135,199,126,195,126,184' onclick='w3.addStyle("#990000",-20,126)' onmouseover='mouseOverColor("#990000")' alt='#990000' /><area style='cursor:pointer' shape='poly' coords='153,180,162,184,162,195,153,199,144,195,144,184' onclick='w3.addStyle("#800000",-20,144)' onmouseover='mouseOverColor("#800000")' alt='#800000' /><area style='cursor:pointer' shape='poly' coords='171,180,180,184,180,195,171,199,162,195,162,184' onclick='w3.addStyle("#993333",-20,162)' onmouseover='mouseOverColor("#993333")' alt='#993333' />
                 </map>
-                                    <p> <strong>Texto</strong> </p>
-                                    <script>
-                                        var thistop = "-35";
-                                        var thisleft = "135";
-                                    </script>
-                                    <div id='selectedhexagon' style='visibility:hidden;position:relative;width:21px;height:21px;background-image:url("https://www.w3schools.com/images/img_selectedcolor.gif")'></div>
-                                </div>
+                                <p> <strong>Texto</strong> </p>
+                                <script>
+                                    var thistop = "-35";
+                                    var thisleft = "135";
+                                </script>
+                                <div id='selectedhexagon' style='visibility:hidden;position:relative;width:21px;height:21px;background-image:url("https://www.w3schools.com/images/img_selectedcolor.gif")'></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+
+    <div id="notificaciones" class="tabcontent ">
+        <br><br>
+
+        <div style="margin: 0;font-family: var(--bs-font-sans-serif);font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: transparent">
+
+            <main class="container-publicaciones">
+                <br>
+
+
+                <div style="padding: 1rem; margin-top: 1rem!;
+                    margin-bottom: 1rem!; margin-top: 1rem!; margin-bottom: 1rem; border-radius: .25rem; box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)" id="publicaciones">
+                    <ul id="idPost" style=" padding-left: 2rem;
+                        margin-top: 0;
+                        margin-bottom: 1rem; list-style-type: none;  margin: 0;  padding: 0;">
+                        <li w3-repeat="publicacionesXiiber" style="list-style-type: none;  margin: 0;  padding: 0;">
+                            <div style="display: flex; padding-top: 1rem">
+                                <img src="{{img-avatar}}" width="32" height="32" style="vertical-align: middle; margin-right: .5rem; flex-shrink: 0; border-radius: .25rem; box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)">
+                                <p style=" margin-top: 0;
+                                    margin-bottom: 1rem; padding-bottom: 1rem;  font-size: .875em; margin-bottom: 0; border-bottom: 1px solid #e1e5e9 ;  line-height: 1.25">
+                                    <strong style=" font-weight: bolder; display: block ">@XiiberTravel 
+                                            <span style="font-weight: 100;">
+                                            {{fechaDePublicacion}}
+                                        </span>
+                                    </strong> {{Post}}
+                                    <a rel="nofollow" href="#" data-href="<?echo $pageId?>" class="automatic"></a>
+                                    </a>
+
+                                    <a rel="nofollow" href="#" data-href="{{pageid}}" class="automatic">{{accion}}</a><br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <div style="display: flex; align-items: center;padding: 1rem; margin-top: 1rem!; margin-bottom: 1rem; color: #fff; background-color: #017dbb; box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075); border-radius: .25rem">
+                    <img src="https://www.xiiber.com/favicon.png" width="48" height="48" style="vertical-align: middle; flex-shrink: 0; border-radius: .25rem;  margin-right: .5rem; ">
+                    <div style="line-height: 1">
+                        <h1 class="h1publi nicknamex " style=" color: #fff; line-height: 1;  margin-bottom: 0; ">Twitter</h1>
+                        <strong style="font-weight: bolder">@XiiberTravel</strong>
+                    </div>
+                </div>
+
+                <script>
+                    w3.displayObject("idPost", myObject);
+                </script>
+
 
         </div>
-        <!-- The Modal -->
 
 
-        <div id="notificaciones" class="tabcontent ">
-            <br><br><br>
-            <h3>Londonoti</h3>
-
-
-            <STYLE>
-                .page-container {
-                    position: absolute;
-                    top: 100%;
-                    bottom: auto;
-                    left: 0;
-                    right: 0;
-                    overflow-x: hidden;
-                }
-                
-                .section {
-                    display: block;
-                    position: absolute;
-                    position: -webkit-sticky;
-                    position: sticky;
-                    height: auto;
-                    top: auto;
-                    bottom: auto;
-                    min-height: 80px;
-                    width: 100%;
-                    font-family: Verdana;
-                    font-size: 24px;
-                    letter-spacing: 2px;
-                    text-align: center;
-                }
-                
-                .next-section {
-                    height: 800px;
-                }
-                
-                .big-image-thing {
-                    display: block;
-                    position: absolute;
-                    height: 600px;
-                    top: 100px;
-                    width: 90%;
-                    max-width: 1000px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background-size: cover !important;
-                    background-position: center !important;
-                    background: url("");
-                    overflow: hidden;
-                }
-                
-                #big-image-checkbox {
-                    display: none;
-                }
-                
-                #big-image-checkbox:checked~.big-image-label {
-                    top: 25% !important;
-                }
-                
-                #big-image-checkbox:checked~.big-image-pix {
-                    top: 36.5%;
-                }
-                
-                .big-image-label {
-                    display: visibility;
-                    position: absolute;
-                    height: 80px;
-                    left: 0;
-                    right: 0;
-                    top: 97%;
-                    font-family: Verdana;
-                    font-size: 20px;
-                    letter-spacing: 1px;
-                    text-align: center;
-                    line-height: 80px;
-                    transition: 0.3s ease;
-                    background-color: rgb(0, 0, 0);
-                    color: white
-                }
-                
-                .big-image-label:hover {
-                    top: 88.5%;
-                }
-                
-                .big-image-pix {
-                    display: block;
-                    position: absolute;
-                    height: 63.5%;
-                    top: 3000%;
-                    left: 0;
-                    right: -1px;
-                    text-align: center;
-                    transition: 0.3s ease;
-                    overflow-x: hidden;
-                    overflow-y: scroll;
-                }
-                
+        <STYLE>
+            .page-container {
+                position: absolute;
+                top: 100%;
+                bottom: auto;
+                left: 0;
+                right: 0;
+                overflow-x: hidden;
+            }
+            
+            .section {
+                display: block;
+                position: absolute;
+                position: -webkit-sticky;
+                position: sticky;
+                height: auto;
+                top: auto;
+                bottom: auto;
+                min-height: 80px;
+                width: 100%;
+                font-family: Verdana;
+                font-size: 24px;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+            
+            .next-section {
+                height: 800px;
+            }
+            
+            .big-image-thing {
+                display: block;
+                position: absolute;
+                height: 600px;
+                top: 100px;
+                width: 90%;
+                max-width: 1000px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: cover !important;
+                background-position: center !important;
+                background: url("");
+                overflow: hidden;
+            }
+            
+            #big-image-checkbox {
+                display: none;
+            }
+            
+            #big-image-checkbox:checked~.big-image-label {
+                top: 25% !important;
+            }
+            
+            #big-image-checkbox:checked~.big-image-pix {
+                top: 36.5%;
+            }
+            
+            .big-image-label {
+                display: visibility;
+                position: absolute;
+                height: 80px;
+                left: 0;
+                right: 0;
+                top: 97%;
+                font-family: Verdana;
+                font-size: 20px;
+                letter-spacing: 1px;
+                text-align: center;
+                line-height: 80px;
+                transition: 0.3s ease;
+                background-color: rgb(0, 0, 0);
+                color: white
+            }
+            
+            .big-image-label:hover {
+                top: 88.5%;
+            }
+            
+            .big-image-pix {
+                display: block;
+                position: absolute;
+                height: 63.5%;
+                top: 3000%;
+                left: 0;
+                right: -1px;
+                text-align: center;
+                transition: 0.3s ease;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+            
+            .cat-pic {
+                display: inline-block;
+                position: relative;
+                width: 38%;
+                padding-bottom: 33%;
+                margin: 2%;
+                background-size: cover !important;
+                background-position: center !important;
+            }
+            
+            .cat-one {
+                background: url("img/caterpillar-work-one.webp");
+            }
+            
+            .cat-two {
+                background: url("img/caterpillar-work-day.webp");
+            }
+            
+            .cat-three {
+                background: url("img/caterpillar-work.webp");
+            }
+            
+            .cat-four {
+                background: url("img/Caterpillar-yellow.webp");
+            }
+            
+            .cat-five {
+                background: url("img/Caterpillar-yellow.webp");
+            }
+            
+            .cat-six {
+                background: url("img/Caterpillar-amarillo.webp");
+            }
+            
+            .cat-seven {
+                background: url("img/Caterpillar.webp");
+            }
+            
+            .cat-eight {
+                background: url("img/Funny-Cat-Pictures.webp");
+            }
+            /* MEDIA QUERIES */
+            
+            @media screen and (max-width: 620px) {
                 .cat-pic {
-                    display: inline-block;
-                    position: relative;
-                    width: 38%;
-                    padding-bottom: 33%;
-                    margin: 2%;
-                    background-size: cover !important;
-                    background-position: center !important;
+                    width: 90%;
+                    padding-bottom: 80%;
                 }
-                
-                .cat-one {
-                    background: url("img/caterpillar-work-one.webp");
-                }
-                
-                .cat-two {
-                    background: url("img/caterpillar-work-day.webp");
-                }
-                
-                .cat-three {
-                    background: url("img/caterpillar-work.webp");
-                }
-                
-                .cat-four {
-                    background: url("img/Caterpillar-yellow.webp");
-                }
-                
-                .cat-five {
-                    background: url("img/Caterpillar-yellow.webp");
-                }
-                
-                .cat-six {
-                    background: url("img/Caterpillar-amarillo.webp");
-                }
-                
-                .cat-seven {
-                    background: url("img/Caterpillar.webp");
-                }
-                
-                .cat-eight {
-                    background: url("img/Funny-Cat-Pictures.webp");
-                }
-                /* MEDIA QUERIES */
-                
-                @media screen and (max-width: 620px) {
-                    .cat-pic {
-                        width: 90%;
-                        padding-bottom: 80%;
-                    }
-                }
-            </STYLE>
+            }
+        </STYLE>
 
-            <!-- partial:index.partial.html -->
-            <div class="page-container">
-                <div class="section next-section">
-                    <div class="big-image-thing">
-                        <input type="checkbox" id="big-image-checkbox" />
-                        <label for="big-image-checkbox" class="big-image-label">¡Haga clic para ver fotos de gatitos!</label>
-                        <div class="big-image-pix">
-                            <div class="cat-pic cat-one"></div>
-                            <div class="cat-pic cat-two"></div>
-                            <div class="cat-pic cat-three"></div>
-                            <div class="cat-pic cat-four"></div>
-                            <div class="cat-pic cat-five"></div>
-                            <div class="cat-pic cat-six"></div>
-                            <div class="cat-pic cat-seven"></div>
-                            <div class="cat-pic cat-eight"></div>
-                        </div>
+        <!-- partial:index.partial.html -->
+        <div class="page-container">
+            <div class="section next-section">
+                <div class="big-image-thing">
+                    <input type="checkbox" id="big-image-checkbox" />
+                    <label for="big-image-checkbox" class="big-image-label">¡Haga clic para ver fotos de gatitos!</label>
+                    <div class="big-image-pix">
+                        <div class="cat-pic cat-one"></div>
+                        <div class="cat-pic cat-two"></div>
+                        <div class="cat-pic cat-three"></div>
+                        <div class="cat-pic cat-four"></div>
+                        <div class="cat-pic cat-five"></div>
+                        <div class="cat-pic cat-six"></div>
+                        <div class="cat-pic cat-seven"></div>
+                        <div class="cat-pic cat-eight"></div>
                     </div>
                 </div>
             </div>
-            <!-- partial -->
         </div>
-        <div id="mpa"> </div>
+        <!-- partial -->
+    </div>
+    <div id="mpa"> </div>
     </div>
 
 
@@ -1211,17 +1002,6 @@
             </div>
 
             <a href="# " target=" _blank " class="hi-button-blue ">hi Button Blue</a>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

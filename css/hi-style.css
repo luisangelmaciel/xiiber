@@ -352,18 +352,19 @@
     
     .taptop {
         overflow: hidden;
-        background-color: #000000;
+        background-color: #017db0;
         color: #ffffff;
         width: 100%;
         position: fixed;
         top: 0;
         margin: 0;
         border: none;
-        font-size: 24px
+        font-size: 24px;
+        padding: 5px;
     }
     
     .tablinktop {
-        background-color: #000000;
+        background-color: #017db0;
         color: #ffffff;
         float: left;
         border: none;
@@ -383,7 +384,7 @@
     }
     
     .tablinktop i:hover {
-        color: #f0ecec;
+        color: #0f536e;
     }
     /* Style the tab content que es el mismo que body para que pueda cambiar de darkmode */
     
@@ -417,8 +418,7 @@
     .hi-icon-bar {
         width: 100%;
         background-color: #ffffff;
-        overflow: auto position: fixed;
-        font-size: 25pt;
+        overflow: auto;
     }
     /* Style the tab content */
     
@@ -2784,4 +2784,297 @@
     .hi-border-pale-blue,
     .hi-hover-border-pale-blue:hover {
         border-color: #e7ffff!important
+    }
+    /* XIIBER CSS */
+    
+    .container-publicaciones {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto
+    }
+    
+    @media (min-width:576px) {
+        .container-publicaciones {
+            max-width: 540px
+        }
+    }
+    
+    @media (min-width:768px) {
+        .container-publicaciones {
+            max-width: 720px
+        }
+    }
+    
+    @media (min-width:992px) {
+        .container-publicaciones {
+            max-width: 960px
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .container-publicaciones {
+            max-width: 1140px
+        }
+    }
+    
+    @media (min-width:1400px) {
+        .container-publicaciones {
+            max-width: 1320px
+        }
+    }
+    
+    .nicknamex,
+    h1 .h1publi {
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2
+    }
+    
+    h1 .h1publi {
+        font-size: calc(1.375rem + 1.5vw)
+    }
+    
+    @media (min-width:1200px) {
+        h1 .h1publi {
+            font-size: 2.5rem
+        }
+    }
+    
+    .nicknamex {
+        font-size: 1rem
+    }
+    
+    .hi-acc-container {
+        width: 100%;
+        background: none;
+    }
+    
+    .hi-acc-btn {
+        width: 100%;
+        padding: 1rem 0rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+        text-align: left;
+        transition: all 0.5s linear;
+        color: inherit;
+    }
+    
+    .hi-acc-btn:after {
+        content: "\271A";
+        color: #017dbb;
+        float: right;
+        transition: all 0.3s linear;
+        font-weight: bold;
+    }
+    
+    .hi-acc-btn.is-open:after {
+        transform: rotate(90deg);
+    }
+    
+    .hi-acc-btn:hover,
+    .hi-acc-btn.is-open {
+        color: inherit;
+        font-weight: bold;
+    }
+    
+    .hi-acc-btnx {
+        width: 100%;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        text-align: left;
+        transition: all 0.5s linear;
+    }
+    
+    .hi-acc-btnx:after {
+        color: #eae9f3;
+        float: right;
+        transition: all 0.3s linear;
+    }
+    
+    .hi-acc-content {
+        max-height: 0;
+        font-size: 1rem;
+        margin: 0 .6rem;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        border-bottom: 1px solid #ccc;
+        background: none;
+        color: inherit;
+        list-style-type: none;
+    }
+    
+    A:link {
+        text-decoration: none
+    }
+    
+    A:visited {
+        text-decoration: none
+    }
+    
+    A:hover {
+        text-decoration: none
+    }
+    
+    a {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: inherit;
+        /* Black w/ opacity */
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        background-color: inherit;
+        margin: auto;
+        border: 1px solid #888;
+        width: 70%;
+    }
+    /* The Close Button */
+    
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+    
+    .pride-background {
+        background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+        animation: background-slide 4000s infinite linear;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #selectedcolor {
+        border: 1px solid #e3e3e3;
+        width: 80%;
+        height: 300px;
+        margin: auto;
+    }
+    
+    #divpreview {
+        border: 1px solid #e3e3e3;
+        width: 80px;
+        height: 20px;
+        margin: auto;
+        visibility: hidden;
+    }
+    
+    .colorTable,
+    #colorhexDIV,
+    #colorrgbDIV,
+    #colorhslDIV,
+    #colornamDIV {
+        font-family: Consolas, 'Courier New', Courier, monospace;
+    }
+    
+    #colorhexDIV,
+    #colorrgbDIV,
+    #colorhslDIV,
+    #colornamDIV {
+        font-size: 18px;
+    }
+    
+    #wronginputDIV {
+        text-align: left;
+        position: absolute;
+        margin: 4px 10px;
+        color: #a94442;
+        display: none;
+    }
+    
+    .has-error input {
+        border: 1px solid red;
+    }
+    
+    #entercolorDIV input,
+    #entercolorDIV button {
+        height: 28px;
+    }
+    
+    #entercolorDIV input {
+        width: 80%;
+        border: 1px solid #d3d3d3;
+        border-right: none;
+    }
+    
+    .ws-table-all td {
+        padding: 4px;
+    }
+    
+    .colorthird1 {
+        width: 34%;
+    }
+    
+    .colorthird2 {
+        width: 33%;
+    }
+    
+    .colorthird3 {
+        width: 33%;
+    }
+    
+    @media screen and (max-width:1080px) {
+        .colorthird1,
+        .colorthird2,
+        .colorthird3 {
+            width: 100%;
+        }
     }
