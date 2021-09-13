@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css">
     <script src="js/w3.js"></script>
     <link rel="stylesheet" href="css/hi-style.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
-    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
     <!-- bye <script src="js/jquery-3.5.0.js"></script> -->
     <link rel="icon " href="assets/icon/maskable_icon.png " sizes="114x114 " type="image/png " purpose="any maskable ">
 
@@ -326,7 +326,7 @@
         <div class="taptop">
             <button class="tablinktop" aria-label="home"> <i class="icon-logo-xiiber-2021c" style="float:left; margin-left:15px"></i></button>
             <button class="tablinktop" aria-label="home"><label class="switch"  ><input type="checkbox" aria-label="Chechk Bok" checked><span class="slider round " onclick="myFunction()"  ></span>    </label>              </button>
-            <button class="tablinktop">
+            <button class="tablinktop" aria-label="home">
                 <i class="icon-menu " style="float:right; margin-right:15px; " onclick="openName(event, 'menu')"   ></i>
                 <!-- <i class="icon-experiencias " style="float:right; margin-right:23px; " > </i>  --> 
                 <i class="icon-experiencias " style="float:right; margin-right:23px;  background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);        animation: background-slide 4000s infinite linear;  background-clip: text;          -webkit-background-clip: text;        -webkit-text-fill-color: transparent;" id="myBtn"> </i> 
@@ -917,47 +917,25 @@
                     }
                 </script>
 
-                    
-         <script>                    document.write(saludo);                </script>
-        <script>myFunction(saludo)"></script>
-            <p id="saludo"></p>
-            <script>
-                function myFunction() {
-                    var greeting;
-                    var time = new Date().getHours();
-                    if (time < 10) {
-                        greeting = "¡Buenos días, te deseo tengas un buen día!";
-                    } else if (time < 20) {
-                        greeting = "Hola, ¿Cómo va tu día?";
-                    } else {
-                        greeting = "Buenas noches, ¿Qué tal tu día?";
-                    }
-                    document.getElementById("saludo").innerHTML = greeting;
-                }
-            </script>
-
-
-
-            </li>
+                  </li>
             </ul>
 
 
             <br><br><br><br>
-
         </div>
         <!-- final de menu-->
 
 
-        <div id=""> </div>
+    
 
         <!-- inicio NewExperiencias-->
-        <div id="NewExperiencias" class="tabcontent">
+        <div id="NewExperiencias " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
         </div>
@@ -969,13 +947,13 @@
 
 
         <!-- inicio sobreXiiber-->
-        <div id="sobreXiiber" class="tabcontent">
+        <div id="sobreXiiber " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
         </div>
@@ -984,24 +962,24 @@
 
 
         <!-- inicio opcionesDePago-->
-        <div id="opcionesDePago" class="tabcontent">
+        <div id="opcionesDePago " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
 
             <div itemscope itemtype="https://schema.org/TouristAttraction ">
                 <h2 class="section-title text-center ">Formas de pago<br>
                     <i class="icon-opciones-de-pago " style="font-size:29px "><span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6
-    "></span><span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span><span class="path13 "></span><span class="path14 "></span><span class="path15
-    "></span><span class="path16 "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21 "></span><span class="path22 "></span><span class="path23 "></span><span class="path24
-    "></span><span class="path25 "></span><span class="path26 "></span><span class="path27 "></span><span class="path28 "></span><span class="path29 "></span><span class="path30 "></span><span class="path31 "></span><span class="path32 "></span><span class="path33
-    "></span><span class="path34 "></span><span class="path35 "></span><span class="path36 "></span><span class="path37 "></span><span class="path38 "></span><span class="path39 "></span><span class="path40 "></span><span class="path41 "></span><span class="path42
-    "></span><span class="path43 "></span><span class="path44 "></span><span class="path45 "></span><span class="path46 "></span><span class="path47 "></span><span class="path48 "></span><span class="path49 "></span><span class="path50 "></span><span class="path51 "></span></i></h2>
+                "></span><span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span><span class="path13 "></span><span class="path14 "></span><span class="path15
+                "></span><span class="path16 "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21 "></span><span class="path22 "></span><span class="path23 "></span><span class="path24
+                "></span><span class="path25 "></span><span class="path26 "></span><span class="path27 "></span><span class="path28 "></span><span class="path29 "></span><span class="path30 "></span><span class="path31 "></span><span class="path32 "></span><span class="path33
+                "></span><span class="path34 "></span><span class="path35 "></span><span class="path36 "></span><span class="path37 "></span><span class="path38 "></span><span class="path39 "></span><span class="path40 "></span><span class="path41 "></span><span class="path42
+                "></span><span class="path43 "></span><span class="path44 "></span><span class="path45 "></span><span class="path46 "></span><span class="path47 "></span><span class="path48 "></span><span class="path49 "></span><span class="path50 "></span><span class="path51 "></span></i></h2>
                 <p class="lead main text-center "></p>
 
                 <button class="collapsible "><div><meta itemprop="paymentAccepted " content="Cash, Credit Card "/>Banco Azteca</div></button>
@@ -1100,13 +1078,13 @@
 
 
  <!-- inicio faq-->
-        <div id="faq" class="tabcontent">
+        <div id="faq " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
         </div>
@@ -1118,13 +1096,13 @@
 
 
  <!-- inicio faq-->
-        <div id="faq" class="tabcontent">
+        <div id="faq " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
         </div>
@@ -1132,13 +1110,13 @@
 
 
  <!-- inicio faq-->
-        <div id="faq" class="tabcontent">
+        <div id="faq " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
 
@@ -1148,36 +1126,36 @@
 
 
     <!-- inicio de mapa de sitio -->
-        <div id="mapaDeSitio" class="tabcontent">
+        <div id="mapaDeSitio " class="tabcontent ">
             <br><br><br>
-            <div class="hi-container">
+            <div class="hi-container ">
                 <div class="hi-padding-16 ">
-                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right  hi-i-hover" style="font-size:50px "></i>
-                    <span class="hi-xlarge hi-text-bold-hover" onclick="openName(event, 'menu')">Regresar</span><br>
-                    <span class="hi-invisible">.</span>
+                    <i class=" icon-mapa-de-sitio hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
+                    <span class="hi-xlarge hi-text-bold-hover " onclick="openName(event, 'menu') ">Regresar</span><br>
+                    <span class="hi-invisible ">.</span>
                 </div>
             </div>
 
             <br><br><br>
-            <div class="hi-container">
-                <div class="hi-acc-container">
-                    <button class="hi-acc-btn">Viajes</button>
-                    <div class="hi-acc-content">
-                        <ul class=" hi-f_list" style="list-style-type: none;">
+            <div class="hi-container ">
+                <div class="hi-acc-container ">
+                    <button class="hi-acc-btn ">Viajes</button>
+                    <div class="hi-acc-content ">
+                        <ul class=" hi-f_list " style="list-style-type: none; ">
                             <li><a href="viajes/acapulco.html ">Acapulco</a></li>
-                            <li><a href="viajes/cdmx.html">CDMX</a></li>
-                            <li><a href="viajes/puertovallarta.html">Puerto Vallarta</a></li>
-                            <li><a href="viajes/tepoztlan.html">Tepoztlán</a></li>
-                            <li><a href="viajes/veracruz.html#">Veracruz</a></li>
-                            <li><a href="viajes/zipolite.html">Zipolite</a></li>
-                            <li><a href="experiencias/rutagastronomica.html">Ruta Gastronómica</a></li> <br> <br>
+                            <li><a href="viajes/cdmx.html ">CDMX</a></li>
+                            <li><a href="viajes/puertovallarta.html ">Puerto Vallarta</a></li>
+                            <li><a href="viajes/tepoztlan.html ">Tepoztlán</a></li>
+                            <li><a href="viajes/veracruz.html# ">Veracruz</a></li>
+                            <li><a href="viajes/zipolite.html ">Zipolite</a></li>
+                            <li><a href="experiencias/rutagastronomica.html ">Ruta Gastronómica</a></li> <br> <br>
                         </ul>
-                        <!--  <a href="index.html"  style="text-decoration:none"> -->
+                        <!--  <a href="index.html "  style="text-decoration:none "> -->
                     </div>
 
-                    <button class="hi-acc-btn">Experiencias</button>
+                    <button class="hi-acc-btn ">Experiencias</button>
                     <div class="hi-acc-content ">
-                        <ul style="list-style-type: none;">
+                        <ul style="list-style-type: none; ">
                             <li><a href="experiencias/pokemongo.html ">Pokemon Go</a></li>
                             <li><a href="experiencias/Underground.html ">Underground CDMX</a></li>
                             <li><a href="experiencias/rutagastronomica.html ">¡A comer!</a></li>
@@ -1198,7 +1176,7 @@
 
                     <button class="hi-acc-btn "> Sobre Xiiber </button>
                     <div class="hi-acc-content ">
-                        <ul style="list-style-type: none;">
+                        <ul style="list-style-type: none; ">
                             <li><a href="about/xiiber.html ">Xiiber Travel</a></li>
                             <li><a href="about/cgtravel.html ">CGTravel</a></li>
                             <li><a href="about/redes-sociales.html ">Redes sociales</a></li>
@@ -1220,7 +1198,7 @@
 
                     <button class="hi-acc-btn "> Blog   </button>
                     <div class="hi-acc-content ">
-                        <ul class="hi-list-unstyled hi-f_list " style="list-style-type: none;">
+                        <ul class="hi-list-unstyled hi-f_list " style="list-style-type: none; ">
                             <li><a href="telefonos-de-emergencia-y-asistencia-cdmx.html ">Teléfonos de emergencia y asistencia CDMX</a></li>
                             <li><a href="salud/covid_sexo_gay.html ">El sexo en tiempos de COVID</a></li><br>
 
@@ -1267,10 +1245,10 @@
 
         <div class="hi-footerx ">
             <div class="hi-icon-bar ">
-                <i class="icon-notificaciones hi-hover-opacity" onclick="openName(event, 'notificaciones')" id="defaultOpen"> <p >Notificaciones</p></i>
-                <i class="icon-viajes-one hi-hover-opacity" onclick="openName(event, 'viajes')"> <p>Viajes</p></i>
-                <i class="icon-experiencias hi-hover-opacity" onclick="openName(event, 'experiencias')"> <p>Experiencias</p></i>
-                <i class="icon-calendario hi-hover-opacity" onclick="openName(event, 'kalendario')"> <p>Calendario</p></i>
+                <i class="icon-notificaciones hi-hover-opacity " onclick="openName(event, 'notificaciones') " id="defaultOpen "> <p >Notificaciones</p></i>
+                <i class="icon-viajes-one hi-hover-opacity " onclick="openName(event, 'viajes') "> <p>Viajes</p></i>
+                <i class="icon-experiencias hi-hover-opacity " onclick="openName(event, 'experiencias') "> <p>Experiencias</p></i>
+                <i class="icon-calendario hi-hover-opacity " onclick="openName(event, 'kalendario') "> <p>Calendario</p></i>
             </div>
         </div>
 
@@ -1319,44 +1297,44 @@
 
             function openName(evt, Name) {
                 var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
+                tabcontent = document.getElementsByClassName("tabcontent ");
                 for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
+                    tabcontent[i].style.display = "none ";
                 }
-                tablinks = document.getElementsByClassName("tablinks");
+                tablinks = document.getElementsByClassName("tablinks ");
                 for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    tablinks[i].className = tablinks[i].className.replace(" active ", " ");
                 }
-                document.getElementById(Name).style.display = "block";
-                evt.currentTarget.className += " active";
+                document.getElementById(Name).style.display = "block ";
+                evt.currentTarget.className += " active ";
             }
 
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
+            // Get the element with id="defaultOpen " and click on it
+            document.getElementById("defaultOpen ").click();
 
             // Get the modal
-            var modal = document.getElementById("myModal");
+            var modal = document.getElementById("myModal ");
 
             // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+            var btn = document.getElementById("myBtn ");
 
             // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+            var span = document.getElementsByClassName("close ")[0];
 
             // When the user clicks the button, open the modal 
             btn.onclick = function() {
-                modal.style.display = "block";
+                modal.style.display = "block ";
             }
 
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
-                modal.style.display = "none";
+                modal.style.display = "none ";
             }
 
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
                 if (event.target == modal) {
-                    modal.style.display = "none";
+                    modal.style.display = "none ";
                 }
             }
         </script>
@@ -1378,61 +1356,61 @@
 <!-- esto es de bootstrap
     
            
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 ">
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#bootstrap "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Experiencias&nbsp; <span class=" hi-large hi-text-bold-hover"><span class=" hi-red hi-round-large hi-small "  > &nbsp; &nbsp; Nuevo &nbsp; &nbsp; </span> </span>
+                        <h4 class="fw-bold mb-0 ">Experiencias&nbsp; <span class=" hi-large hi-text-bold-hover "><span class=" hi-red hi-round-large hi-small "  > &nbsp; &nbsp; Nuevo &nbsp; &nbsp; </span> </span>
                         </h4>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start">
-                    <i class=" icon-experiencias hi-left hi-margin-right hi-i-hover" style="font-size:50px "></i>
+                <div class="col d-flex align-items-start ">
+                    <i class=" icon-experiencias hi-left hi-margin-right hi-i-hover " style="font-size:50px "></i>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
 
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#calendar3 "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#home "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#speedometer2 "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#toggles2 "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#geo-fill "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start">
-                    <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+                <div class="col d-flex align-items-start ">
+                    <svg class="bi text-muted flex-shrink-0 me-3 " width="1.75em " height="1.75em "><use xlink:href="#tools "/></svg>
                     <div>
-                        <h4 class="fw-bold mb-0">Featured title</h4>
+                        <h4 class="fw-bold mb-0 ">Featured title</h4>
                         <p>Paragraph of text beneath the heading to explain the heading.</p>
                     </div>
                 </div>
