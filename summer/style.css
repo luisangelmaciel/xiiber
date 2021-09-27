@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+    background: #182431;
+}
+
+/* === Text effect === */
+#svg {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    transform: scale(.8);
+}
+
+.svgWords {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+}
+
+.svgWords.run-animation {
+    -webkit-animation: lineAnimation 8300ms alternate 2 cubic-bezier(.2, .77, .83, .2),
+        fillAnimation 8300ms alternate 2 linear;
+            animation: lineAnimation 8300ms alternate 2 cubic-bezier(.2, .77, .83, .2),
+        fillAnimation 8300ms alternate 2 linear;
+}
+
+#s {
+    fill: rgb(229, 126, 38);
+    fill-opacity: 0;
+    stroke: rgb(229, 126, 38);
+    stroke-dasharray: 660;
+    stroke-dashoffset: 660;
+}
+
+#u {
+    stroke: rgb(227, 212, 31);
+    fill: rgb(227, 212, 31);
+    fill-opacity: 0;
+    stroke-dasharray: 870;
+    stroke-dashoffset: 870;
+}
+
+#m1 {
+    fill: rgb(18, 234, 18);
+    fill-opacity: 0;
+    stroke: rgb(18, 234, 18);
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+#m2 {
+    fill: rgb(21, 174, 255);
+    fill-opacity: 0;
+    stroke: rgb(21, 174, 255);
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+#e {
+    fill: rgb(203, 30, 255);
+    fill-opacity: 0;
+    stroke: rgb(203, 30, 255);
+    stroke-dasharray: 544;
+    stroke-dashoffset: 544;
+}
+
+#r {
+    fill: rgb(230, 38, 38);
+    fill-opacity: 0;
+    stroke: rgb(230, 38, 38);
+    stroke-dasharray: 810;
+    stroke-dashoffset: 810;
+}
+
+@-webkit-keyframes lineAnimation {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes lineAnimation {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes fillAnimation {
+    40% {
+        fill-opacity: 0;
+    }
+    91% {
+        fill-opacity: 0.6;
+    }
+    94% {
+        fill-opacity: 0;
+    }
+    97% {
+        fill-opacity: 0.9;
+    }
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+@keyframes fillAnimation {
+    40% {
+        fill-opacity: 0;
+    }
+    91% {
+        fill-opacity: 0.6;
+    }
+    94% {
+        fill-opacity: 0;
+    }
+    97% {
+        fill-opacity: 0.9;
+    }
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+
+/* === Video === */
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+/* === Background === */
+.bg {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2)
+}
